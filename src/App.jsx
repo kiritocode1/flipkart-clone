@@ -7,7 +7,7 @@ import next_js_logo from './assets/next-js.svg'
 import MainNavBar from './MainNavBar.jsx'
 import CategoryBar from './CategoryBar'; 
 import ButtonGroupCategories from './ButtonGroupCategories'
-
+import ProductsCarousel from './ProductsCarousel'
 
 // import EasyComponent from './Components/EasyComponent'
 import { Navbar, Text, Button, Image, Spacer } from '@nextui-org/react'; 
@@ -29,9 +29,24 @@ function App() {
       
       <ButtonGroupCategories />
       <Spacer y={ 2 } />
-
+      <Text color="$gray800" size={ "$4xl" } weight="light" i
+      
+        css={ {
+          textAlign: 'start',
+        }}
+      
+      >Explore Our Selections</Text>
+      <Spacer y={ 2 } />
+      
       <CategoryBar/>
-      hello world 
+      <Spacer y={ 2 } />
+      <Text color="$gray800" size={ "$4xl" } weight="light" i
+              css={ {
+          textAlign: 'start',
+        }}
+      
+      >Shop Groceries</Text>
+      <ProductsCarousel />
     </div>
   )
 }
