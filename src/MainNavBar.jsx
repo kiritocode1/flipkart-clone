@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
-import AcmeLogo from './assets/next-js.svg'
 
+import flipkart from './assets/flipkart-logo.png'
 // ---Components---
 import SearchBar from './SearchBar';
 
@@ -30,7 +30,7 @@ const EasyApp = () => {
           }}
         >
 
-          <img src={AcmeLogo} alt="hehe"  className={"w-8 h-8"} />
+          <img src={flipkart} alt="hehe"  className={"w-8 h-8"} />
         </Navbar.Brand>
         <Navbar.Content
           enableCursorHighlight
