@@ -1,8 +1,6 @@
 import React from 'react'
 import { Navbar, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
-
 import flipkart from './assets/flipkart-logo.png'
-// ---Components---
 import SearchBar from './SearchBar';
 
 const EasyApp = () => {
