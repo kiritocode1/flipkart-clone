@@ -5,15 +5,23 @@ import './App.css'
 
 import next_js_logo from './assets/next-js.svg'
 import MainNavBar from './MainNavBar.jsx'
+import CategoryBar from './CategoryBar'; 
+import ButtonGroupCategories from './ButtonGroupCategories'
+
+
 // import EasyComponent from './Components/EasyComponent'
-import { Navbar, Text, Button, Image } from '@nextui-org/react'; 
+import { Navbar, Text, Button, Image, Spacer } from '@nextui-org/react'; 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="">
-      <MainNavBar/>
-      <img src={next_js_logo} alt="hehe"  />
+      <MainNavBar />
+      <Spacer y={ 2 } />
+      <ButtonGroupCategories />
+      <Spacer y={ 2 } />
+
+      <CategoryBar/>
       hello world 
     </div>
   )
