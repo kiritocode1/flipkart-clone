@@ -18,6 +18,15 @@ function App() {
     <div className="">
       <MainNavBar />
       <Spacer y={ 2 } />
+      <Text color="$gray800" size={ "$4xl" } weight="light" i
+      
+        css={ {
+          textAlign: 'start',
+        }}
+      
+      >Shop By categories</Text>
+      <Spacer y={ 2 } />
+      
       <ButtonGroupCategories />
       <Spacer y={ 2 } />
 

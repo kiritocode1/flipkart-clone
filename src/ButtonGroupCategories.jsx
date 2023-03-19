@@ -1,10 +1,10 @@
 import React from 'react'
 
 import { Button, Spacer } from "@nextui-org/react"; 
-import {MdOutlineToys} from "react-icons/md";
+import {MdOutlineToys, MdOutlineLocalGroceryStore, MdOutlineTableBar, MdSportsTennis, MdDirectionsCar} from "react-icons/md";
 import {RiTShirt2Fill} from "react-icons/ri"; 
-import {TbDevices, TbShoe} from "react-icons/tb";
-
+import {TbDevices, TbShoe, TbPerfume} from "react-icons/tb";
+import {BsFillPostcardHeartFill} from "react-icons/bs"
 const ButtonGroupCategories = () => {
 
     const data = [
@@ -23,13 +23,37 @@ const ButtonGroupCategories = () => {
         , {
             type: "electronics",
             icon: <TbDevices size={ 30 } />
+        }, 
+        {
+            type: "groceries",
+            icon: <MdOutlineLocalGroceryStore size={ 30 } />
+        }, 
+        {
+            type: "furniture",
+            icon: <MdOutlineTableBar size={ 30 } />
+        },
+        {
+            type: "personal Care",
+            icon: <TbPerfume size={ 30 } />
+        }, 
+        {
+            type: "sports",
+            icon: <MdSportsTennis size={ 30 } />
+        }, 
+        {
+            type: "vehicles",
+            icon: <MdDirectionsCar size={ 30 } />
+        }, 
+        {
+            type: "Gift card", 
+            icon: <BsFillPostcardHeartFill size={ 30 } />
         }
      ]; 
   return (
-      <div className={ "grid md:grid-cols-4 grid-cols-2 gap-8 w-full " }>
+      <div className={ "gap-6 w-full   flex  md:overflow-visible overflow-scroll md:flex-wrap" }>
           {
               data.map((item, index) => {
-                    return (<span>
+                    return (
                         <Button
                             key={ index }
 
@@ -50,8 +74,6 @@ const ButtonGroupCategories = () => {
 
                                                         
                         </Button>
-                        <Spacer  x={2} />
-                        </span>
                     )
                 }
           ,)}
